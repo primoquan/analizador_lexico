@@ -27,5 +27,10 @@ public class Main {
                 );
             }
         }
+        
+        /*Con esto vamos a ver errores por si no esta el archivo */ 
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
