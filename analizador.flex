@@ -1,10 +1,15 @@
 %%
+/* Aqui vamos a poner el nombre de la clase de jflex, el tipo de caracteres a leer, 
+vamos a leer lineas y columnas, y vamos a decir que vamos a crear tokens*/
 %class Analizador
 
 %unicode
+%line 
 %column
 %type token
 
+
+/*Con esta clase vamos a guardar cada token que se encuentre*/
 %{
     public static class Token {
         public String nombre;
