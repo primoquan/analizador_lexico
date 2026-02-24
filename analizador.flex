@@ -54,7 +54,8 @@ ESPACIO = [ \t\r\n]+ //Este es para que nos reconozca el espacio
 {NULL}      { return new Token("NULL", yytext(), NULL, yyline+1, yycolumn+1); }
 
 
-//Vamos a ignorara los espacios por que no nos los piden
+//Vamos a ignorar los espacios por que no nos los piden
+
 {ESPACIO} {}
 
 //Nuestra validacion de error
