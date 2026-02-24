@@ -6,7 +6,7 @@ vamos a leer lineas y columnas, y vamos a decir que vamos a crear tokens*/
 %unicode
 %line 
 %column
-%type token
+%type Token
 
 
 /*Con esta clase vamos a guardar cada token que se encuentre*/
@@ -47,11 +47,11 @@ ESPACIO = [ \t\r\n]+ //Este es para que nos reconozca el espacio
 "]"         { return new Token("CORCHETE_CIERRA", yytext(), "\\]", yyline+1, yycolumn+1); }
 ":"         { return new Token("DOS_PUNTOS", yytext(), ":", yyline+1, yycolumn+1); }
 ","         { return new Token("COMA", yytext(), ",", yyline+1, yycolumn+1); }
-{STRING}    { return new Token("STRING", yytext(), STRING, yyline+1, yycolumn+1); }
-{DECIMAL}   { return new Token("DECIMAL", yytext(), DECIMAL, yyline+1, yycolumn+1); }
-{NUMERO}    { return new Token("NUMERO", yytext(), NUMERO, yyline+1, yycolumn+1); }
-{BOOLEAN}   { return new Token("BOOLEAN", yytext(), BOOLEAN, yyline+1, yycolumn+1); }
-{NULL}      { return new Token("NULL", yytext(), NULL, yyline+1, yycolumn+1); }
+{STRING}    { return new Token("STRING", yytext(), "STRING", yyline+1, yycolumn+1); }
+{DECIMAL}   { return new Token("DECIMAL", yytext(), "DECIMAL", yyline+1, yycolumn+1); }
+{NUMERO}    { return new Token("NUMERO", yytext(), "NUMERO", yyline+1, yycolumn+1); }
+{BOOLEAN}   { return new Token("BOOLEAN", yytext(), "BOOLEAN", yyline+1, yycolumn+1); }
+{NULL}      { return new Token("NULL", yytext(), "NULL", yyline+1, yycolumn+1); }
 
 
 //Vamos a ignorar los espacios por que no nos los piden

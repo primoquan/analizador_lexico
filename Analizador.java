@@ -570,7 +570,7 @@ class Analizador {
    * @return the next token.
    * @exception java.io.IOException if any I/O-Error occurs.
    */
-  public token yylex() throws java.io.IOException
+  public Token yylex() throws java.io.IOException
   {
     int zzInput;
     int zzAction;
@@ -727,7 +727,7 @@ class Analizador {
           // fall through
           case 16: break;
           case 4:
-            { return new Token("NUMERO", yytext(), NUMERO, yyline+1, yycolumn+1);
+            { return new Token("NUMERO", yytext(), "NUMERO", yyline+1, yycolumn+1);
             }
           // fall through
           case 17: break;
@@ -757,22 +757,22 @@ class Analizador {
           // fall through
           case 22: break;
           case 10:
-            { return new Token("STRING", yytext(), STRING, yyline+1, yycolumn+1);
+            { return new Token("STRING", yytext(), "STRING", yyline+1, yycolumn+1);
             }
           // fall through
           case 23: break;
           case 11:
-            { return new Token("DECIMAL", yytext(), DECIMAL, yyline+1, yycolumn+1);
+            { return new Token("DECIMAL", yytext(), "DECIMAL", yyline+1, yycolumn+1);
             }
           // fall through
           case 24: break;
           case 12:
-            { return new Token("NULL", yytext(), NULL, yyline+1, yycolumn+1);
+            { return new Token("NULL", yytext(), "NULL", yyline+1, yycolumn+1);
             }
           // fall through
           case 25: break;
           case 13:
-            { return new Token("BOOLEAN", yytext(), BOOLEAN, yyline+1, yycolumn+1);
+            { return new Token("BOOLEAN", yytext(), "BOOLEAN", yyline+1, yycolumn+1);
             }
           // fall through
           case 26: break;
