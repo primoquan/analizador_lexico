@@ -737,22 +737,22 @@ class Analizador {
           // fall through
           case 18: break;
           case 6:
-            { return new Token("CORCHETE_ABRE", yytext(), "\\[", yyline+1, yycolumn+1);
+            { return new Token("CORCHETE_ABRE", yytext(), "[", yyline+1, yycolumn+1);
             }
           // fall through
           case 19: break;
           case 7:
-            { return new Token("CORCHETE_CIERRA", yytext(), "\\]", yyline+1, yycolumn+1);
+            { return new Token("CORCHETE_CIERRA", yytext(), "]", yyline+1, yycolumn+1);
             }
           // fall through
           case 20: break;
           case 8:
-            { return new Token("LLAVE_ABRE", yytext(), "\\{", yyline+1, yycolumn+1);
+            { return new Token("LLAVE_ABRE", yytext(), "{", yyline+1, yycolumn+1);
             }
           // fall through
           case 21: break;
           case 9:
-            { return new Token("LLAVE_CIERRA", yytext(), "\\}", yyline+1, yycolumn+1);
+            { return new Token("LLAVE_CIERRA", yytext(), "}", yyline+1, yycolumn+1);
             }
           // fall through
           case 22: break;

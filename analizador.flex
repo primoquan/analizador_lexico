@@ -41,10 +41,10 @@ ESPACIO = [ \t\r\n]+ //Este es para que nos reconozca el espacio
 
 //Aqui vamos a hacer nuestra reglas
 
-"{"         { return new Token("LLAVE_ABRE", yytext(), "\\{", yyline+1, yycolumn+1); }
-"}"         { return new Token("LLAVE_CIERRA", yytext(), "\\}", yyline+1, yycolumn+1); }
-"["         { return new Token("CORCHETE_ABRE", yytext(), "\\[", yyline+1, yycolumn+1); }
-"]"         { return new Token("CORCHETE_CIERRA", yytext(), "\\]", yyline+1, yycolumn+1); }
+"{"         { return new Token("LLAVE_ABRE", yytext(), "{", yyline+1, yycolumn+1); }
+"}"         { return new Token("LLAVE_CIERRA", yytext(), "}", yyline+1, yycolumn+1); }
+"["         { return new Token("CORCHETE_ABRE", yytext(), "[", yyline+1, yycolumn+1); }
+"]"         { return new Token("CORCHETE_CIERRA", yytext(), "]", yyline+1, yycolumn+1); }
 ":"         { return new Token("DOS_PUNTOS", yytext(), ":", yyline+1, yycolumn+1); }
 ","         { return new Token("COMA", yytext(), ",", yyline+1, yycolumn+1); }
 {STRING}    { return new Token("STRING", yytext(), "STRING", yyline+1, yycolumn+1); }

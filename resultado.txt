@@ -1,0 +1,162 @@
+TOKEN                LEXEMA                         PATRON          FILA   COLUMNA 
+LLAVE_ABRE           {                              {               2      1       
+STRING               "nombreComputadora"            STRING          3      3       
+DOS_PUNTOS           :                              :               3      22      
+STRING               "Workstation Gamer PRO"        STRING          3      24      
+COMA                 ,                              ,               3      47      
+STRING               "marca"                        STRING          4      3       
+DOS_PUNTOS           :                              :               4      10      
+STRING               "Custom Build"                 STRING          4      12      
+COMA                 ,                              ,               4      26      
+STRING               "fechaEnsamblaje"              STRING          5      3       
+DOS_PUNTOS           :                              :               5      20      
+STRING               "2024-01-15"                   STRING          5      22      
+COMA                 ,                              ,               5      34      
+STRING               "encendida"                    STRING          6      3       
+DOS_PUNTOS           :                              :               6      14      
+BOOLEAN              true                           BOOLEAN         6      16      
+COMA                 ,                              ,               6      20      
+STRING               "componentes"                  STRING          7      3       
+DOS_PUNTOS           :                              :               7      16      
+CORCHETE_ABRE        [                              [               7      18      
+LLAVE_ABRE           {                              {               8      5       
+STRING               "tipo"                         STRING          9      7       
+DOS_PUNTOS           :                              :               9      13      
+STRING               "Procesador"                   STRING          9      15      
+COMA                 ,                              ,               9      27      
+STRING               "modelo"                       STRING          10     7       
+DOS_PUNTOS           :                              :               10     15      
+STRING               "Intel Core i9-13900K"         STRING          10     17      
+COMA                 ,                              ,               10     39      
+STRING               "nucleos"                      STRING          11     7       
+DOS_PUNTOS           :                              :               11     16      
+NUMERO               24                             NUMERO          11     18      
+COMA                 ,                              ,               11     20      
+STRING               "hilos"                        STRING          12     7       
+DOS_PUNTOS           :                              :               12     14      
+NUMERO               32                             NUMERO          12     16      
+COMA                 ,                              ,               12     18      
+STRING               "frecuenciaGHz"                STRING          13     7       
+DOS_PUNTOS           :                              :               13     22      
+DECIMAL              5.8                            DECIMAL         13     24      
+COMA                 ,                              ,               13     27      
+STRING               "arquitectura"                 STRING          14     7       
+DOS_PUNTOS           :                              :               14     21      
+STRING               "Raptor Lake"                  STRING          14     23      
+COMA                 ,                              ,               14     36      
+STRING               "tecnologias"                  STRING          15     7       
+DOS_PUNTOS           :                              :               15     20      
+CORCHETE_ABRE        [                              [               15     22      
+STRING               "Hyper-Threading"              STRING          16     9       
+COMA                 ,                              ,               16     26      
+STRING               "Turbo Boost Max 3.0"          STRING          17     9       
+COMA                 ,                              ,               17     30      
+STRING               "PCIe 5.0"                     STRING          18     9       
+CORCHETE_CIERRA      ]                              ]               19     7       
+LLAVE_CIERRA         }                              }               20     5       
+COMA                 ,                              ,               20     6       
+LLAVE_ABRE           {                              {               21     5       
+STRING               "tipo"                         STRING          22     7       
+DOS_PUNTOS           :                              :               22     13      
+STRING               "Memoria RAM"                  STRING          22     15      
+COMA                 ,                              ,               22     28      
+STRING               "modelo"                       STRING          23     7       
+DOS_PUNTOS           :                              :               23     15      
+STRING               "Corsair Vengeance RGB"        STRING          23     17      
+COMA                 ,                              ,               23     40      
+STRING               "capacidadGB"                  STRING          24     7       
+DOS_PUNTOS           :                              :               24     20      
+NUMERO               32                             NUMERO          24     22      
+COMA                 ,                              ,               24     24      
+STRING               "velocidadMHz"                 STRING          25     7       
+DOS_PUNTOS           :                              :               25     21      
+NUMERO               6400                           NUMERO          25     23      
+COMA                 ,                              ,               25     27      
+STRING               "tipo"                         STRING          26     7       
+DOS_PUNTOS           :                              :               26     13      
+STRING               "DDR5"                         STRING          26     15      
+COMA                 ,                              ,               26     21      
+STRING               "latencia"                     STRING          27     7       
+DOS_PUNTOS           :                              :               27     17      
+STRING               "CL36"                         STRING          27     19      
+COMA                 ,                              ,               27     25      
+STRING               "canales"                      STRING          28     7       
+DOS_PUNTOS           :                              :               28     16      
+CORCHETE_ABRE        [                              [               28     18      
+STRING               "Dual Channel"                 STRING          29     9       
+COMA                 ,                              ,               29     23      
+STRING               "XMP 3.0"                      STRING          30     9       
+CORCHETE_CIERRA      ]                              ]               31     7       
+LLAVE_CIERRA         }                              }               32     5       
+COMA                 ,                              ,               32     6       
+LLAVE_ABRE           {                              {               33     5       
+STRING               "tipo"                         STRING          34     7       
+DOS_PUNTOS           :                              :               34     13      
+STRING               "Tarjeta Gráfica"              STRING          34     15      
+COMA                 ,                              ,               34     32      
+STRING               "modelo"                       STRING          35     7       
+DOS_PUNTOS           :                              :               35     15      
+STRING               "NVIDIA RTX 4090"              STRING          35     17      
+COMA                 ,                              ,               35     34      
+STRING               "vramGB"                       STRING          36     7       
+DOS_PUNTOS           :                              :               36     15      
+NUMERO               24                             NUMERO          36     17      
+COMA                 ,                              ,               36     19      
+STRING               "nucleosCUDA"                  STRING          37     7       
+DOS_PUNTOS           :                              :               37     20      
+NUMERO               16384                          NUMERO          37     22      
+COMA                 ,                              ,               37     27      
+STRING               "frecuenciaBoostMHz"           STRING          38     7       
+DOS_PUNTOS           :                              :               38     27      
+NUMERO               2520                           NUMERO          38     29      
+COMA                 ,                              ,               38     33      
+STRING               "tecnologias"                  STRING          39     7       
+DOS_PUNTOS           :                              :               39     20      
+CORCHETE_ABRE        [                              [               39     22      
+STRING               "Ray Tracing"                  STRING          40     9       
+COMA                 ,                              ,               40     22      
+STRING               "DLSS 3"                       STRING          41     9       
+COMA                 ,                              ,               41     17      
+STRING               "Reflex"                       STRING          42     9       
+CORCHETE_CIERRA      ]                              ]               43     7       
+LLAVE_CIERRA         }                              }               44     5       
+COMA                 ,                              ,               44     6       
+LLAVE_ABRE           {                              {               45     5       
+STRING               "tipo"                         STRING          46     7       
+DOS_PUNTOS           :                              :               46     13      
+STRING               "Almacenamiento"               STRING          46     15      
+COMA                 ,                              ,               46     31      
+STRING               "modelo"                       STRING          47     7       
+DOS_PUNTOS           :                              :               47     15      
+STRING               "Samsung 990 Pro"              STRING          47     17      
+COMA                 ,                              ,               47     34      
+STRING               "capacidadGB"                  STRING          48     7       
+DOS_PUNTOS           :                              :               48     20      
+NUMERO               2000                           NUMERO          48     22      
+COMA                 ,                              ,               48     26      
+STRING               "tipo"                         STRING          49     7       
+DOS_PUNTOS           :                              :               49     13      
+STRING               "NVMe SSD"                     STRING          49     15      
+COMA                 ,                              ,               49     25      
+STRING               "interfaz"                     STRING          50     7       
+DOS_PUNTOS           :                              :               50     17      
+STRING               "PCIe 4.0 x4"                  STRING          50     19      
+COMA                 ,                              ,               50     32      
+STRING               "velocidadLecturaMBs"          STRING          51     7       
+DOS_PUNTOS           :                              :               51     28      
+NUMERO               7450                           NUMERO          51     30      
+COMA                 ,                              ,               51     34      
+STRING               "velocidadEscrituraMBs"        STRING          52     7       
+DOS_PUNTOS           :                              :               52     30      
+NUMERO               6900                           NUMERO          52     32      
+LLAVE_CIERRA         }                              }               53     5       
+CORCHETE_CIERRA      ]                              ]               54     3       
+COMA                 ,                              ,               54     4       
+STRING               "puntuacionBenchmark"          STRING          55     3       
+DOS_PUNTOS           :                              :               55     24      
+NUMERO               28500                          NUMERO          55     26      
+COMA                 ,                              ,               55     31      
+STRING               "sistemaOperativo"             STRING          56     3       
+DOS_PUNTOS           :                              :               56     21      
+STRING               "Windows 11 Pro"               STRING          56     23      
+LLAVE_CIERRA         }                              }               57     1       

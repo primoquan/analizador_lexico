@@ -18,20 +18,26 @@ public class Main {
 
             Analizador.Token token;
 
-            System.out.println("TOKEN\tLEXEMA\tPATRON\tFILA\tCOLUMNA");
-            writer.println("TOKEN\tLEXEMA\tPATRON\tFILA\tCOLUMNA");
+
+/*Vamos a poner la salida como que fuera un formato tabla para que se vea mas ordenado*/
+            System.out.printf("%-20s %-30s %-15s %-6s %-8s%n","TOKEN","LEXEMA","PATRON","FILA","COLUMNA");
+            writer.printf("%-20s %-30s %-15s %-6s %-8s%n","TOKEN","LEXEMA","PATRON","FILA","COLUMNA");
 
             while ((token = lexer.yylex()) != null) {
 
-                String linea =
-                        token.nombre + "\t" +
-                        token.lexema + "\t" +
-                        token.patron + "\t" +
-                        token.fila + "\t" +
-                        token.columna;
+                System.out.printf("%-20s %-30s %-15s %-6d %-8d%n",
+                        token.nombre,
+                        token.lexema,
+                        token.patron,
+                        token.fila,
+                        token.columna);
 
-                System.out.println(linea);
-                writer.println(linea);
+                writer.printf("%-20s %-30s %-15s %-6d %-8d%n",
+                        token.nombre,
+                        token.lexema,
+                        token.patron,
+                        token.fila,
+                        token.columna);
             }
 
             /* cerrar archivo */
