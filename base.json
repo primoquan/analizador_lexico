@@ -1,57 +1,49 @@
-
 {
-  "nombreComputadora": "Workstation Gamer PRO",
-  "marca": "Custom Build",
-  "fechaEnsamblaje": "2024-01-15",
-  "encendida": true,
-  "componentes": [
+  "universidad": "Universidad Da Vinci de Guatemala",
+  "facultad": "Ingeniería",
+  "activo": true,
+  "anioFundacion": 1600,
+  "ranking": 4.5,
+
+  "estudiantes": [
     {
-      "tipo": "Procesador",
-      "modelo": "Intel Core i9-13900K",
-      "nucleos": 24,
-      "hilos": 32,
-      "frecuenciaGHz": 5.8,
-      "arquitectura": "Raptor Lake",
-      "tecnologias": [
-        "Hyper-Threading",
-        "Turbo Boost Max 3.0",
-        "PCIe 5.0"
+      "nombre": "Ana López",
+      "carnet": 20230001,
+      "edad": 20,
+      "promedio": 85.75,
+      "becado": false,
+      "cursos": [
+        "Matemática Discreta",
+        "Programación 1",
+        "Física 1"
       ]
     },
     {
-      "tipo": "Memoria RAM",
-      "modelo": "Corsair Vengeance RGB",
-      "capacidadGB": 32,
-      "velocidadMHz": 6400,
-      "tipo": "DDR5",
-      "latencia": "CL36",
-      "canales": [
-        "Dual Channel",
-        "XMP 3.0"
+      "nombre": "Carlos Méndez",
+      "carnet": 20230002,
+      "edad": 22,
+      "promedio": 90.10,
+      "becado": true,
+      "cursos": [
+        "Base de Datos",
+        "Estructuras de Datos",
+        "Compiladores"
       ]
-    },
-    {
-      "tipo": "Tarjeta Gráfica",
-      "modelo": "NVIDIA RTX 4090",
-      "vramGB": 24,
-      "nucleosCUDA": 16384,
-      "frecuenciaBoostMHz": 2520,
-      "tecnologias": [
-        "Ray Tracing",
-        "DLSS 3",
-        "Reflex"
-      ]
-    },
-    {
-      "tipo": "Almacenamiento",
-      "modelo": "Samsung 990 Pro",
-      "capacidadGB": 2000,
-      "tipo": "NVMe SSD",
-      "interfaz": "PCIe 4.0 x4",
-      "velocidadLecturaMBs": 7450,
-      "velocidadEscrituraMBs": 6900
     }
   ],
-  "puntuacionBenchmark": 28500,
-  "sistemaOperativo": "Windows 11 Pro"
+
+  "servidores": [
+    {
+      "nombre": "Servidor Central",
+      "ip": "192.168.1.10",
+      "activo": true,
+      "capacidadTB": 12
+    },
+    {
+      "nombre": "Servidor Backup",
+      "ip": "192.168.1.11",
+      "activo": false,
+      "capacidadTB": 8
+    }
+  ]
 }

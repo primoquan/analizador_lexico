@@ -1,4 +1,7 @@
+# Manual de usuario
+
 # Analizador Léxico de Archivos JSON en Java con JFlex
+
 
 **Herramienta de análisis léxico desarrollada con JFlex para procesar estructuras de archivos JSON.**
 
@@ -46,13 +49,13 @@ jflex analizador.flex
 
 Esto generarar un archivo llamado:
 
-Analizado.java
+Analizador.java
 
 ### Paso 2: Compilar nuestro programa
 
 En la terminal colocoamos este comando:
 
-java *.java
+javac *.java
 
 ### Paso 3: Ejecutamos el programa
 
